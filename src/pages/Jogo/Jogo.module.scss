@@ -1,0 +1,39 @@
+.containerJogo {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas: "cartela form";
+
+ padding: 0 20px;
+}
+
+.cartelaContainer {
+ grid-area: cartela;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+ span {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 22px;
+ }
+}
+
+.containerItemCartelas {
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.formJogo {
+ grid-area: form;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ gap: 25px;
+ margin-top: 75px;
+}
